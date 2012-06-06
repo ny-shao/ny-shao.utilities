@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-#  Author: Ning-Yi SHAO ningyi.shao@mssm.edu
+#  Author: Ning-Yi SHAO shaoningyi@gmail.com
 # -*- coding: utf-8 -*-
 
 """
