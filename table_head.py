@@ -47,9 +47,9 @@ def print_matrix(max_cell, lines_matrix, terminal_w):
     len_i = [sum(max_cell[:i+1]) for i in range(len(max_cell))]
     lines_matrix_next = None
     for i in range(len(len_i)):
-        if terminal_w < len_i[i]:
+        if terminal_w < (len_i[i]+i):
             # split the lines_matrix
-            (lines_matrix, lines_matrix_next) = split_matrix(lines_matrix, i-1)
+            (lines_matrix, lines_matrix_next) = split_matrix(lines_matrix, i)
             break
     for line in lines_matrix:
         print '|'.join([ s.ljust(w) for w,s in zip(max_cell, line)])
