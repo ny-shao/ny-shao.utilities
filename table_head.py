@@ -55,7 +55,7 @@ def print_matrix(max_cell, lines_matrix, terminal_w):
         print '|'.join([ s.ljust(w) for w,s in zip(max_cell, line)])
     if lines_matrix_next != None:
         print '-'*terminal_w
-        print_matrix(max_cell[i-1:], lines_matrix_next, terminal_w)
+        print_matrix(max_cell[i:], lines_matrix_next, terminal_w)
 
 def main():
     opt_parser =  OptionParser()
