@@ -58,6 +58,8 @@ optional arguments:
 
 A script to add a column of gene symbol to correspondent ensembl id.
 
-+ args[1]: file name, only csv or txt
-+ args[2]: column number of ensembl_id
-+ args[3]: if "1", input file with header; other: no header.
+```
+ args[1]: file name, only csv or txt
+ args[2]: column number of ensembl_id
+ args[3]: if "1", input file with header; other: no header.
+```
