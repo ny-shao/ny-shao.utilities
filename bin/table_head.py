@@ -22,16 +22,9 @@ def transpose(matrix):
 
 def get_terminal_width_resize():
     """
-    Copy from pydf.
-    Thanks to Radovan Garabik.
+    use 'tput cols' to fetch the width of the terminal.
     """
-    c = commands.getoutput('resize').split('\n')
-    c = [x for x in c if x.startswith('COLUMNS=')]
-    if c:
-        c = c[0]
-        dummy, c = c.split('=', 1)
-        if c[-1] == ';':
-            c = c[:-1]
+    c = commands.getoutput('tput cols').split('\n')[0]
     if c:
         return int(c)
     else:
