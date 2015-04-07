@@ -1,0 +1,8 @@
+## liftOver configs
+go_chain: "/opt/liftover_chains/mm10ToHg19.over.chain"
+back_chain: "/opt/liftover_chains/hg19ToMm10.over.chain"
+minMatch: 0.3
+minBlocks: 0.5
+
+input_beds:
+ - "H3K27ac_peak.bed"

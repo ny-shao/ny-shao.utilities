@@ -1,0 +1,8 @@
+## liftOver configs
+go_chain: "/your/path/AToB.over.chain"
+back_chain: "/your/path/BToA.over.chain"
+minMatch: 0.3
+minBlocks: 0.5
+
+input_beds:
+  - "your.bed"
